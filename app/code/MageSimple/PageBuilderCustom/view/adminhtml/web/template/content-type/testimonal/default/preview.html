@@ -1,0 +1,24 @@
+<!-- preview.html -->
+<div attr="data.main.attributes"
+     ko-style="data.main.style"
+     css="data.main.css"
+     class="pagebuilder-content-type pagebuilder-testimonal"
+     event="{ mouseover: onMouseOver, mouseout: onMouseOut }, mouseoverBubble: false"
+>
+    <render args="getOptions().template" ></render>
+    <div class="testimonal-content">
+        <div attr="data.text.attributes"
+             data-bind="liveEdit: { field: 'text', placeholder: $t('text') }">
+        </div>
+        <div attr="data.rating.attributes"
+            data-bind="liveEdit: { field: 'rating', placeholder: $t('rating') }">
+        </div>
+        <div attr="data.person.attributes"
+            data-bind="liveEdit: { field: 'person', placeholder: $t('name') }">
+        </div>
+        <div attr="data.role.attributes"
+            data-bind="liveEdit: { field: 'role', placeholder: $t('role') }">
+        </div>
+    </div>
+</div>
+

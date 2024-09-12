@@ -1,0 +1,31 @@
+<!-- preview.html -->
+<div class="pagebuilder-content-type pagebuilder-testimonals" style="min-height: 300px; border: #0a0a0a medium solid;" attr="data.main.attributes"  css="data.main.css" event="{ mouseover: onMouseOver, mouseout: onMouseOut }, mouseoverBubble: false">
+    <render args="getOptions().template"></render>
+    <div class="testimonals-content">
+        <div attr="data.title.attributes"
+             data-bind="liveEdit: { field: 'title', placeholder: $t('title') }">
+        </div>
+    </div>
+    <div>
+        <render args="childTemplate"></render>
+    </div>
+    <div class="slider-controls focus-options">
+        <div class="slider-navigation"
+            each="$parent.getChildren()"
+         >
+            <div class="navigation-dot"
+                 tabindex="0"
+             >
+                <a class="navigation-dot-anchor" href="#"></a>
+                <with args="preview">
+                    <render with="preview" args="getOptions().template" ></render>
+                </with>
+                <span class="tooltip-content"
+                      role="tooltip"
+                      text="preview.slideName">
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
