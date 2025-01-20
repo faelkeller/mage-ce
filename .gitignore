@@ -71,3 +71,8 @@ atlassian*
 /generated/*
 !/generated/.htaccess
 .DS_Store
+
+!/magento-vars.php
+
+!/.env.dist
+!/ssl
