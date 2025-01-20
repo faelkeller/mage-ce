@@ -149,6 +149,7 @@ services:
     environment:
       - MAGENTO_RUN_MODE=developer
       - 'PHP_EXTENSIONS=bcmath bz2 calendar exif gd gettext intl mysqli pcntl pdo_mysql soap sockets sysvmsg sysvsem sysvshm opcache zip xsl sodium'
+      - MAGENTO_BACKEND_URL=${MAGENTO_BACKEND_URL}
   build:
     hostname: build.magento2.docker
     image: 'magento/magento-cloud-docker-php:8.3-cli-1.3.7'
