@@ -76,3 +76,5 @@ atlassian*
 
 !/.env.dist
 !/ssl
+
+!/pwa/**

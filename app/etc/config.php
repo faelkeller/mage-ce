@@ -362,6 +362,7 @@ return [
         'Magento_AdminAdobeImsTwoFactorAuth' => 0,
         'Magento_GoogleOptimizer' => 1,
         'Magento_Ups' => 1,
+        'Magento_UpwardConnector' => 1,
         'Magento_SalesSampleData' => 1,
         'Magento_CatalogUrlRewriteGraphQl' => 1,
         'Magento_UrlRewriteGraphQlPwa' => 1,
@@ -387,6 +388,7 @@ return [
         'PayPal_BraintreeCustomerBalance' => 1,
         'PayPal_BraintreeGiftCardAccount' => 1,
         'PayPal_BraintreeGiftWrapping' => 1,
-        'PayPal_BraintreeGraphQl' => 1
+        'PayPal_BraintreeGraphQl' => 1,
+        'Yireo_DisableServiceWorkerInAdmin' => 1
     ]
 ];
